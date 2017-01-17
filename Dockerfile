@@ -8,7 +8,7 @@ MAINTAINER Renzo Kottmann <renzo.kottmann@gmail.com>
 # 1. missing rm of  /var/lib/apt/lists apt-get cache and /tmp
 # 2. and no explicit versioning (version pinning in debian slang)
 # 3. runs as root by default
-
+ 
 ENV APP_DIR=/opt/shiny-server \
     SHINY_VERSION=1.5.2.837 \
     SHINY_USER=shiny \
@@ -34,5 +34,4 @@ EXPOSE 3838
 
 USER ${SHINY_USER}
 
-ENTRYPOINT ["shiny-server","2>&1"]
- 
+ENTRYPOINT ["shiny-server"]

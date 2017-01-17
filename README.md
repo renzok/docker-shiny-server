@@ -1,4 +1,4 @@
-= Docker: Shiny Server =
+# Docker: Shiny Server 
 
 Based on
 [original image](https://github.com/rocker-org/shiny/blob/master/Dockerfile)
